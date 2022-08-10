@@ -1,3 +1,5 @@
+/* fontfamliy */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* borders */
 .red {
   border: 1px solid red;
@@ -17,8 +19,6 @@
 
 
 
-/* fontfamliy */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
   --color-primary-blue: #0324cb;
@@ -106,7 +106,11 @@ main {
   background: var(--color-primary-lighter-blue);
   color: white;
   text-transform: uppercase;
-  padding: 20px;
+  padding-left: 30px;
+  padding-right: 50px;
+  /* padding-top: 50px; */
+  /* padding-bottom: 50px; */
+  /* padding:50px 20px; */
 }
 
 .card-title {
@@ -117,8 +121,8 @@ main {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 28px;
+  width: 55px;
+  height: 26px;
 }
 
 .switch input {
@@ -149,9 +153,9 @@ main {
 .slider:before {
   position: absolute;
   content: "";
-  height: 20px;
+  height: 18px;
   top: 3px;
-  width: 28px;
+  width: 26px;
   left: 4px;
   bottom: 4px;
   background-color: var(--color-primary-dark-blue);
@@ -185,17 +189,17 @@ input:checked+.slider:before {
 .rangeContainer {
   width: 100%;
   border: 1px solid var(--color-light);
-  border-radius: 12px;
-  height: 30px;
+  border-radius: 18px;
+  height: 26px;
   /* margin-top: ; */
 }
 
 .range {
   position: relative;
   -webkit-appearance: none;
-  margin: 4px 0px 0px 4px;
+  margin: 3px 0px 0px 3px;
   /* border: 1px solid red; */
-  width: 95%;
+  width: 96%;
 
   height: 18px;
   background: linear-gradient(90deg, rgb(244, 244, 244) 5%, var(--color-primary-lighter-blue)5%);
@@ -204,7 +208,7 @@ input:checked+.slider:before {
   transition: .2s;
   cursor: pointer;
   outline: none;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .range:hover {
@@ -216,8 +220,8 @@ input:checked+.slider:before {
   appearance: none;
   align-self: center;
   appearance: none;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   background-color: var(--color-primary-dark-blue);
   border-radius: 50%;
 }
@@ -225,8 +229,8 @@ input:checked+.slider:before {
 .range::-moz-slider-thumb {
   align-self: center;
   appearance: none;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   background-color: var(--color-primary-dark-blue);
   border-radius: 50%;
 }
@@ -250,13 +254,14 @@ input:checked+.slider:before {
 
 .btn-font i {
   position: absolute;
-  bottom: 0;
+  bottom: 3px;
+  vertical-align: baseline;
   color: var(--color-white);
-  font-size: 14px;
+  font-size: 10px;
 }
 
 .btn-font i.fa-caret-down {
-  bottom: 3px;
+  bottom: 5px;
 }
 /* size */
 #size{
@@ -265,6 +270,31 @@ input:checked+.slider:before {
   align-self: center;
   padding: 0px 10px;
   border: 1px solid var(--color-light);
+}
+/* right section */
+.right-section{
+  border: 2px solid var(--color-primary-dark-blue);
+  border-radius:var(--border-radius-1) ;
+}
+.scroll-view{
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  color: var(--color-white);
+  height: calc(80vh - 150px);
+}
+.scroll-view::-webkit-scrollbar{
+  /* position: absolute; */
+  border-radius: 12px;
+  width: 16px;
+  padding: 5px;
+  offset-position: right 3em bottom 0px;
+  background-color: transparent;
+  border: 2px solid var(--color-primary-dark-blue);
+}
+.scroll-view::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  /* -webkit-box-shadow: inset 0 0 6px rgb(77, 102, 233); */
+  background-color: #4D66E9; 
 }
 
 /* ********************************************************************************************************************** */
@@ -279,50 +309,136 @@ input:checked+.slider:before {
   .tab-content{
     margin-top: 20px;
 }
+/* pack generator left section  */
+
+.card {
+  padding-left: 25px;
+  padding-right: 50px;
+}
+/* right-section */
+.scroll-view{
+  height: calc(80vh - 100px);
 }
 
+}
+/* ****************************************************************************************************************** */
 /* big upto 1024px */
 @media screen and (max-width: 1024px) {
 
   /* main section */
   main {
-    margin-top: 240px;
+    margin-top: 25px;
+  }
+   /* tab-contents */
+   .tab-content{
+    margin-top: 20px;
+}
+
+  
+
+  .card-title {
+    font-size: 15px;
   }
 
+  /* radio toggle */
+  .slider {
+    width: 65px;
+  }
+
+  .slider:before {
+    width: 30px;
+  }
+  /* right-section */
+.scroll-view{
+  height: calc(80vh - 150px);
+}
+
+}
+/* ******************************************************************************************************************* */
+/* tablet screen  768px*/
+@media screen and (max-width: 768px) {
+  /* card */
   .card {
-    padding: 20px;
+    padding: 0px;
   }
 
+  /* radio toggle */
+  .slider {
+    width: 65px;
+  }
+
+  .slider:before {
+    width: 30px;
+  }
+}
+/* ******************************************************************************************************************** */
+/* for mobiles 576px */
+@media screen and (max-width: 576px) {
+  /* nav contents */
+  .nav-pills .nav-item {
+    width: 200px;
+  }
+  .nav-pills .nav-link {
+    padding:15px 0px;
+    border-radius: 0;
+    width: 100%;
+    font-size: 16px;
+  }
+  /* left section */
   .card-title {
     font-size: 16px;
   }
-
-  /* radio toggle */
-  .slider {
-    width: 65px;
-  }
-
-  .slider:before {
-    width: 30px;
-  }
+/* radio button switch */
+.switch {
+  width: 60px;
+  height: 24px;
+}
+.slider {
+  width: 65px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-/* tablet screen  768px*/
-@media screen and (max-width: 768px) {
-
-  /* radio toggle */
-  .slider {
-    width: 65px;
-  }
-
-  .slider:before {
-    width: 30px;
-  }
+.slider:before {
+  height: 16px;
+  top: 3px;
+  width: 28px;
+  left: 4px;
+  bottom: 4px;
 }
 
-/* for mobiles 576px */
-@media screen and (max-width: 576px) {
-  .nav-pills .nav-link {
-    border-radius: 0;
+/* range */
+/* range  */
+.rangeContainer {
+  width: 100%;
+  height: 24px;
+}
+
+.range {
+  margin: 3px 0px 0px 3px;
+  width: 96%;
+
+  height: 16px;
+}
+
+
+.range::-webkit-slider-thumb {
+  width: 16px;
+  height: 16px;
+}
+
+.range::-moz-slider-thumb {
+  width: 16px;
+  height: 16px;
+}
+
+
+  /* right-section */
+  .scroll-view{
+    text-align: start;
+    font-size: 14px;
+    height: calc(80vh - 300px);
   }
 }
