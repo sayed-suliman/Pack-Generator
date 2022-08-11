@@ -12,8 +12,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
-
+    <style>
+        
+    </style>
     <title>Pack generator</title>
 </head>
 
@@ -27,6 +32,7 @@
                 </a>
             </div>
         </nav>
+
         <!-- <header>
             <nav class="navbar">
                 <div class="container-fluid">
@@ -59,8 +65,8 @@
                         aria-selected="false">ideas page</button>
                 </li>
                 <li class="nav-item m-1" role="presentation">
-                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                    <button class="nav-link" id="pills-builder-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-builder" type="button" role="tab" aria-controls="pills-builder"
                         aria-selected="false">pack builder</button>
                 </li>
             </ul>
@@ -72,7 +78,8 @@
                     <div class="col-md-3 col-lg-3">
                         <!-- 1st card -->
                         <div class="card">
-                            <div class="card-body d-flex justify-content-between align-items-md-start align-items-center flex-md-column">
+                            <div
+                                class="card-body d-flex justify-content-between align-items-md-start align-items-center flex-md-column">
                                 <h5 class="card-title py-md-3 py-lg-3 py-xxl-4">color change</h5>
                                 <div class="pb-md-3 pb-xxl-4">
                                     <label class="switch">
@@ -84,7 +91,8 @@
                         </div>
                         <!-- 2nd card range -->
                         <div class="card my-2">
-                            <div class="card-body d-flex justify-content-between align-items-md-start align-items-center flex-md-column">
+                            <div
+                                class="card-body d-flex justify-content-between align-items-md-start align-items-center flex-md-column">
                                 <h5 class="card-title py-md-3 py-lg-3 py-xxl-4">text speed</h5>
                                 <div class="pb-md-3 pb-xxl-4">
                                     <div class="rangeContainer">
@@ -95,7 +103,8 @@
                         </div>
                         <!-- 3rd card range -->
                         <div class="card">
-                            <div class="card-body d-flex justify-content-between align-items-md-start align-items-center flex-md-column">
+                            <div
+                                class="card-body d-flex justify-content-between align-items-md-start align-items-center flex-md-column">
                                 <h5 class="card-title py-md-3 py-lg-3 py-xxl-4">font size</h5>
                                 <div class="d-flex pb-md-3 pb-xxl-4 justify-content-between justify-content-lg-start">
                                     <div class="me-5 me-md-0">
@@ -103,7 +112,8 @@
                                         <button class="btn-font btn-font-sm ms-3">A <i
                                                 class="fa-solid fa-caret-down ms-1"></i></button>
                                     </div>
-                                    <span class="ms-md-3 ms-lg-5" id="size">16</span>
+                                    <input type="text" onchange="" class="ms-lg-5 text-center " id="size" value="16">
+                                    <!-- <span class="ms-md-3 ms-lg-5" id="size">16</span> -->
                                 </div>
                             </div>
                         </div>
@@ -211,11 +221,311 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-                tabindex="0">...</div>
+                tabindex="0">
+                <div class="row">
+                    <p>Click or right click any picture to copy</p>
+                    <div class="col-12 p-2 right-section">
+                        <div class="scroll-view">
+                            <div class="grid">
+                                <div class="grid-item">
+                                    <img src="./assets/images/cursed-images/Rectangle 115.png" alt=""  />
+                                </div>
+                                <div class="grid-item">
+                                    <img src="./assets/images/cursed-images/Rectangle 116.png" alt=""  />
+                                </div>
+                                <div class="grid-item">
+                                    <img src="./assets/images/cursed-images/Rectangle 118.png" alt=""  />
+                                </div>
+                                <div class="grid-item">
+                                    <img src="./assets/images/cursed-images/Rectangle 119.png" alt=""  />
+                                </div>
+                                <div class="grid-item">
+                                    <img src="./assets/images/cursed-images/Rectangle 119.png" alt=""  />
+                                </div>
+                                <div class="grid-item">
+                                    <img src="./assets/images/cursed-images/Rectangle 120.png" alt=""  />
+                                </div>
+                                <div class="grid-item">
+                                    <img src="./assets/images/cursed-images/Rectangle 122.png.png" alt=""  />
+                                </div>
+                                <div class="grid-item">
+                                    <img src="./assets/images/cursed-images/Rectangle 123.png" alt=""  />
+                                </div>
+                                <div class="grid-item">
+                                    <img src="./assets/images/cursed-images/Rectangle 124.png" alt=""  />
+                                </div>
+                                <div class="grid-item">
+                                    <img src="./assets/images/cursed-images/Rectangle 125.png" alt=""  />
+                                </div>
+                                <div class="grid-item">
+                                    <img src="./assets/images/cursed-images/Rectangle 126.png" alt=""  />
+                                </div>
+                                <div class="grid-item">
+                                    <img src="./assets/images/cursed-images/Rectangle 127.png" alt=""  />
+                                </div>
+                                <div class="grid-item">
+                                    <img src="./assets/images/cursed-images/Rectangle 128.png" alt=""  />
+                                </div>
+                                <div class="grid-item">
+                                    <img src="./assets/images/cursed-images/Rectangle 129.png" alt=""  />
+                                </div>
+                                <div class="grid-item">
+                                    <img src="./assets/images/cursed-images/Rectangle 130.png" alt=""  />
+                                </div>
+                                <div class="grid-item">
+                                    <img src="./assets/images/cursed-images/Rectangle 131.png" alt=""  />
+                                </div>
+                                <div class="grid-item">
+                                    <img src="./assets/images/cursed-images/Rectangle 132.png" alt=""  />
+                                </div>
+                                <div class="grid-item">
+                                    <img src="./assets/images/cursed-images/Rectangle 133.png" alt=""  />
+                                </div>
+                                <div class="grid-item">
+                                    <img src="./assets/images/cursed-images/Rectangle 134.png" alt=""  />
+                                </div>
+
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
-                tabindex="0">...</div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
-                tabindex="0">...</div>
+                tabindex="0">
+                <div class="row">
+                    <div class="col-md-3 col-lg-4">
+                        <!-- 1st card -->
+                        <div class="card py-3">
+                            <div
+                                class="card-body d-md-flex justify-content-between align-items-md-start align-items-center flex-md-column">
+                                <h5 class="card-title py-md-3 py-lg-3 py-xxl-4">search a topic</h5>
+                                <div class="pb-md-3 pt-3 pb-xxl-4 search-div">
+                                    <input type="text" class="search" id="search" placeholder="Type here...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-8 p-3 p-lg-4 right-section">
+                        <div class="scroll-view">
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-builder" role="tabpanel" aria-labelledby="pills-builder-tab"
+                tabindex="0">
+                <div class="row">
+                    <div class="col-md-3 col-lg-4">
+                        <!-- 1st card -->
+                        <div class="card py-md-3">
+                            <div
+                                class="card-body d-flex justify-content-between align-items-md-start align-items-center flex-md-column">
+                                <h5 class="card-title py-md-3 py-lg-3 py-xxl-4">structure packs here</h5>
+                                <div class="pb-md-3 pt-3 pb-xxl-4 search-div">
+                                    <input type="text" class="search" placeholder="Your mom lookslike a $noun">
+                                </div>
+                                <p class="pt-4 pt-md-5">Basically each user can generate random nouns and adjectives by
+                                    using “$”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-8 p-3 p-lg-4 right-section">
+                        <div class="scroll-view">
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="font-italic pe-5" style="text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
