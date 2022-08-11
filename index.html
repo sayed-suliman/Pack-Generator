@@ -17,7 +17,7 @@
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <style>
-        
+
     </style>
     <title>Pack generator</title>
 </head>
@@ -50,12 +50,11 @@
         <div class="row">
             <ul class="nav nav-pills justify-content-center p-0" id="pills-tab" role="tablist">
                 <li class="nav-item m-1" role="presentation">
-                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                        aria-selected="true">pack generator</button>
+                    <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                        type="button" role="tab" aria-controls="pills-home" aria-selected="true">pack generator</button>
                 </li>
                 <li class="nav-item m-1" role="presentation">
-                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                    <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill"
                         data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
                         aria-selected="false">cursed images</button>
                 </li>
@@ -72,8 +71,7 @@
             </ul>
         </div>
         <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-                tabindex="0">
+            <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                 <div class="row">
                     <div class="col-md-3 col-lg-3">
                         <!-- 1st card -->
@@ -220,72 +218,103 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-                tabindex="0">
+            <div class="tab-pane fade show active" id="pills-profile" role="tabpanel"
+                aria-labelledby="pills-profile-tab" tabindex="0">
                 <div class="row">
                     <p>Click or right click any picture to copy</p>
                     <div class="col-12 p-2 right-section">
                         <div class="scroll-view">
                             <div class="grid">
-                                <div class="grid-item">
-                                    <img src="./assets/images/cursed-images/Rectangle 115.png" alt=""  />
-                                </div>
-                                <div class="grid-item">
-                                    <img src="./assets/images/cursed-images/Rectangle 116.png" alt=""  />
-                                </div>
-                                <div class="grid-item">
-                                    <img src="./assets/images/cursed-images/Rectangle 118.png" alt=""  />
-                                </div>
-                                <div class="grid-item">
-                                    <img src="./assets/images/cursed-images/Rectangle 119.png" alt=""  />
-                                </div>
-                                <div class="grid-item">
-                                    <img src="./assets/images/cursed-images/Rectangle 119.png" alt=""  />
-                                </div>
-                                <div class="grid-item">
-                                    <img src="./assets/images/cursed-images/Rectangle 120.png" alt=""  />
-                                </div>
-                                <div class="grid-item">
-                                    <img src="./assets/images/cursed-images/Rectangle 122.png.png" alt=""  />
-                                </div>
-                                <div class="grid-item">
-                                    <img src="./assets/images/cursed-images/Rectangle 123.png" alt=""  />
-                                </div>
-                                <div class="grid-item">
-                                    <img src="./assets/images/cursed-images/Rectangle 124.png" alt=""  />
-                                </div>
-                                <div class="grid-item">
-                                    <img src="./assets/images/cursed-images/Rectangle 125.png" alt=""  />
-                                </div>
-                                <div class="grid-item">
-                                    <img src="./assets/images/cursed-images/Rectangle 126.png" alt=""  />
-                                </div>
-                                <div class="grid-item">
-                                    <img src="./assets/images/cursed-images/Rectangle 127.png" alt=""  />
-                                </div>
-                                <div class="grid-item">
-                                    <img src="./assets/images/cursed-images/Rectangle 128.png" alt=""  />
-                                </div>
-                                <div class="grid-item">
-                                    <img src="./assets/images/cursed-images/Rectangle 129.png" alt=""  />
-                                </div>
-                                <div class="grid-item">
-                                    <img src="./assets/images/cursed-images/Rectangle 130.png" alt=""  />
-                                </div>
-                                <div class="grid-item">
-                                    <img src="./assets/images/cursed-images/Rectangle 131.png" alt=""  />
-                                </div>
-                                <div class="grid-item">
-                                    <img src="./assets/images/cursed-images/Rectangle 132.png" alt=""  />
-                                </div>
-                                <div class="grid-item">
-                                    <img src="./assets/images/cursed-images/Rectangle 133.png" alt=""  />
-                                </div>
-                                <div class="grid-item">
-                                    <img src="./assets/images/cursed-images/Rectangle 134.png" alt=""  />
+                                <style>
+                                    .masonry {
+                                        columns: 6;
+                                        column-gap: 10px;
+                                    }
+
+                                    @media (max-width: 1200px) {
+                                        .masonry {
+                                            columns: 3;
+                                        }
+                                    }
+
+                                    @media (max-width: 992px) {
+                                        .masonry {
+                                            columns: 2;
+                                        }
+                                    }
+
+                                    .masonry .grid {
+                                        display: inline;
+                                        margin-bottom: 10px!important;
+                                        position: relative;
+                                    }
+
+                                    .masonry .grid img {
+                                        width: 100%;
+                                        border-radius: 5px;
+                                    }
+                                </style>
+                                <div class="masonry">
+                                    <div class="grid">
+                                        <img src="assets/images/cursed-images/Rectangle 116.png">
+                                    </div>
+                                    <div class="grid">
+                                        <img src="assets/images/cursed-images/Rectangle 117.png">
+                                    </div>
+                                    <div class="grid">
+                                        <img src="assets/images/cursed-images/Rectangle 118.png">
+                                    </div>
+                                    <div class="grid">
+                                        <img src="assets/images/cursed-images/Rectangle 115.png">
+                                    </div>
+                                    <div class="grid">
+                                        <img src="assets/images/cursed-images/Rectangle 119.png">
+                                    </div>
+                                    <div class="grid">
+                                        <img src="assets/images/cursed-images/Rectangle 120.png">
+                                    </div>
+                                    <div class="grid">
+                                        <img src="assets/images/cursed-images/Rectangle 122.png">
+                                    </div>
+                                    <div class="grid">
+                                        <img src="assets/images/cursed-images/Rectangle 123.png">
+                                    </div>
+                                    <div class="grid">
+                                        <img src="assets/images/cursed-images/Rectangle 124.png">
+                                    </div>
+                                    <div class="grid">
+                                        <img src="assets/images/cursed-images/Rectangle 125.png">
+                                    </div>
+                                    <div class="grid">
+                                        <img src="assets/images/cursed-images/Rectangle 126.png">
+                                    </div>
+                                    <div class="grid">
+                                        <img src="assets/images/cursed-images/Rectangle 127.png">
+                                    </div>
+                                    <div class="grid">
+                                        <img src="assets/images/cursed-images/Rectangle 128.png">
+                                    </div>
+                                    <div class="grid">
+                                        <img src="assets/images/cursed-images/Rectangle 129.png">
+                                    </div>
+                                    <div class="grid">
+                                        <img src="assets/images/cursed-images/Rectangle 130.png">
+                                    </div>
+                                    <div class="grid">
+                                        <img src="assets/images/cursed-images/Rectangle 131.png">
+                                    </div>
+                                    <div class="grid">
+                                        <img src="assets/images/cursed-images/Rectangle 132.png">
+                                    </div>
+                                    <div class="grid">
+                                        <img src="assets/images/cursed-images/Rectangle 133.png">
+                                    </div>
+                                    <div class="grid">
+                                        <img src="assets/images/cursed-images/Rectangle 134.png">
+                                    </div>
                                 </div>
 
-                              </div>
+                            </div>
                         </div>
                     </div>
                 </div>

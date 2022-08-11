@@ -25,4 +25,3 @@ function formatNumbers(number){
     }
     
 }
-// init Masonry
