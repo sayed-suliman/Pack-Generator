@@ -25,6 +25,7 @@
   --color-primary-blue: #0324cb;
   --color-primary-dark-blue: #031274;
   --color-primary-lighter-blue: #4d66e9;
+  --color-primary-lighter-blue-opacity: rgba(77, 102, 233,0.5);
   --color-dark: #000000;
   --color-white: #ffffff;
   --color-light: #F4F4F4;
@@ -104,11 +105,12 @@ main {
 
 .card {
   border-radius: var(--border-radius-1);
-  background: var(--color-primary-lighter-blue);
+  background: var(--color-primary-lighter-blue-opacity);
   color: white;
   text-transform: uppercase;
   padding-left: 30px;
   padding-right: 50px;
+  /* opacity: 0.5; */
   /* padding-top: 50px; */
   /* padding-bottom: 50px; */
   /* padding:50px 20px; */
@@ -154,8 +156,8 @@ main {
 .slider:before {
   position: absolute;
   content: "";
-  height: 22px;
-  top: 3.5px;
+  height: 23px;
+  top: 3px;
   width: 26px;
   left: 3px;
   right: 3px;
@@ -203,7 +205,7 @@ input:checked+.slider:before {
   /* border: 1px solid red; */
   width: 96%;
   height: 18px;
-  background: linear-gradient(90deg, rgb(244, 244, 244) 5%, var(--color-primary-lighter-blue)5%);
+  background: linear-gradient(90deg, rgb(244, 244, 244) 5%, var(--color-primary-lighter-blue-opacity)5%);
   opacity: 0.7;
   -webkit-transform: 0.2s;
   transition: .2s;
@@ -375,6 +377,12 @@ img {
 .grid-item {
   width: 33.333%;
 } */
+
+.grid{
+  columns: 6;
+  column-gap: 16px;
+}
+
 /* ideas page */
 .search-div{
   width: 100%;
