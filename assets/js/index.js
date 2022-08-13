@@ -2,7 +2,7 @@
 var range = document.querySelector("#myRange")
 range.addEventListener("mousemove",function(){
     var x = range.value
-    var color = `linear-gradient(90deg,rgb(244, 244, 244) ${x}%,var(--color-primary-lighter-blue-opacity)${x}%)`
+    var color = `linear-gradient(90deg,rgb(244, 244, 244) ${x}%,var(--color-primary-lighter-blue-alpha)${x}%)`
     range.style.background = color
 })
 // input integers
