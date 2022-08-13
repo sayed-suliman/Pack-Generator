@@ -207,7 +207,7 @@ input:checked+.slider:before {
   width: 96%;
   height: 18px;
   background: linear-gradient(90deg, rgb(244, 244, 244) 5%, var(--color-primary-lighter-blue-opacity)5%);
-  -webkit-transform: 0.2s;
+  --webkit-transform: 0.2s;
   transition: .2s;
   cursor: pointer;
   outline: none;
