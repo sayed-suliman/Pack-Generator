@@ -25,3 +25,14 @@ function formatNumbers(number){
     }
     
 }
+// input integers
+function onlyNum(){
+    var size = document.getElementById("size")
+    size.value = size.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
+    let max = size.value
+    if(parseInt(max)<=72 && parseInt(max)>0){
+        size.value = max
+    }else{
+        size.value  = max.slice(0,-1)
+    }
+}
